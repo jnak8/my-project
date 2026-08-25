@@ -32,6 +32,12 @@ h1 {
   color: #2563eb;
 }
 
+#count {
+  margin: 0 0 8px;
+  color: #6b7280;
+  font-size: 0.95rem;
+}
+
 button {
   margin-top: 8px;
   padding: 10px 20px;
