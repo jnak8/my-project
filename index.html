@@ -2,18 +2,32 @@
 <html lang="ja">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Hello Sample</title>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover"
+    />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="theme-color" content="#7dd3fc" />
+    <title>ふうせんタッチ</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <main class="card">
-      <h1>はじめてのサンプル</h1>
-      <p>ボタンを押すと挨拶が変わります。</p>
-      <p id="message">ようこそ</p>
-      <p id="count">クリック回数: 0</p>
-      <button id="greet-btn" type="button">挨拶する</button>
-    </main>
+    <div id="game">
+      <canvas id="stage"></canvas>
+      <div id="hud" class="hidden">
+        <div class="hud-box">てんすう <strong id="score">0</strong></div>
+        <div class="hud-box">のこり <strong id="time">40</strong></div>
+      </div>
+      <div id="overlay">
+        <div class="panel">
+          <p class="emoji" aria-hidden="true">🎈</p>
+          <h1>ふうせんタッチ</h1>
+          <p class="lead">あかい ふうせんを タッチしてね</p>
+          <button id="start-btn" type="button">はじめる</button>
+        </div>
+      </div>
+    </div>
     <script src="app.js"></script>
   </body>
 </html>
